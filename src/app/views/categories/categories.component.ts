@@ -18,7 +18,8 @@ export class CategoriesComponent implements OnInit {
     this.categories = this.dataHandler.getCategoties();
   }
 
+  // tslint:disable-next-line:typedef
   showTasksByCategory(category: Category) {
-    this.dataHandler.getTaskByCategory(category);
+    this.dataHandler.fillTaskByCategory(category);
   }
 }
